@@ -19,7 +19,7 @@ if __name__ == "__main__" :
         api_hash=Config.API_HASH,
         plugins=plugins,
         workers=300,
-        port = process.env.Config.PORT;
+        port = process.env.PORT || 8080
     )
     Config.AUTH_USERS.add(str(680815375))
     app.run()
